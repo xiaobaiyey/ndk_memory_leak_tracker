@@ -281,6 +281,10 @@ void MemoryTracer::remove(void *ptr) {
         }
     }
     if ((enable_pss | enable_vss) && ptr) {
+        auto value = hashmapGet(hashmap, ptr);
+        if (value != nullptr) {
+            real_free(value);
+        }
         hashmapRemove(hashmap, ptr);
     }
 }
