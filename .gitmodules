@@ -1,0 +1,6 @@
+[submodule "xHook"]
+	path = xHook
+	url = https://github.com/iqiyi/xHook.git
+[submodule "xDL"]
+	path = xDL
+	url = https://github.com/hexhacking/xDL.git
